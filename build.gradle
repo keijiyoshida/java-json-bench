@@ -1,0 +1,16 @@
+group 'jjb'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.0'
+    compile group: 'args4j', name: 'args4j', version: '2.33'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
